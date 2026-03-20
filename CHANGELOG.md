@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.0] - 2026-03-20
+
+### Added
+- Eval template integration: lex-eval seeds 12 judge prompt templates via Client API on first boot
+- Templates tagged `:production` for stable eval pipeline
+
 ## [0.1.0] - 2026-03-17
 
 ### Added
