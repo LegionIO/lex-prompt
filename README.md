@@ -53,6 +53,13 @@ client.get_prompt(name: 'code-review', version: 1)
 client.list_prompts
 ```
 
+## Related Repos
+
+- `lex-eval` — runs evaluation suites; prompts are rendered and passed to evaluators
+- `lex-dataset` — versioned input/output pairs used together with prompt templates
+- `lex-transformer` — named transform definitions can reference prompt templates by name
+- `legion-llm` — LLM execution layer; rendered prompts are passed here for inference
+
 ## Development
 
 ```bash
