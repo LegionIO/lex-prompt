@@ -34,20 +34,29 @@ DB.create_table(:prompt_tags) do
   unique %i[prompt_id tag]
 end
 
+require 'legion/logging'
+require 'legion/settings'
+require 'legion/cache/helper'
+require 'legion/crypt/helper'
+require 'legion/data/helper'
+require 'legion/json/helper'
+require 'legion/transport/helper'
+
 module Legion
   module Extensions
     module Helpers
-      module Lex; end
+      module Lex
+        include Legion::Logging::Helper
+        include Legion::Settings::Helper
+        include Legion::Cache::Helper
+        include Legion::Crypt::Helper
+        include Legion::Data::Helper
+        include Legion::JSON::Helper
+        include Legion::Transport::Helper
+      end
     end
 
     module Core; end
-  end
-
-  module Logging
-    def self.debug(*); end
-    def self.info(*); end
-    def self.warn(*); end
-    def self.error(*); end
   end
 end
 
