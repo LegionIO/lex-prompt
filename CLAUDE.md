@@ -9,7 +9,7 @@
 Versioned prompt management for LegionIO. Stores LLM prompt templates with immutable versioning, tagged releases, and ERB variable substitution. Content-hash deduplication prevents spurious version creation.
 
 **Gem**: `lex-prompt`
-**Version**: 0.2.0
+**Version**: 0.2.1
 **Namespace**: `Legion::Extensions::Prompt`
 
 ## File Structure
