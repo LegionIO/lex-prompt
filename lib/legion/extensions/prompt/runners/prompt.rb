@@ -97,7 +97,7 @@ module Legion
 
             result = ::JSON.parse(raw)
             result.is_a?(Hash) ? result.transform_keys(&:to_sym) : {}
-          rescue ::JSON::ParserError
+          rescue ::JSON::ParserError => _e
             {}
           end
 
